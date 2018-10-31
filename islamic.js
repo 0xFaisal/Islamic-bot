@@ -3,7 +3,7 @@ const Discord = require( 'discord.js' );
 const ytdl = require('ytdl-core');
 const client = new Discord.Client( );
 const settings = require("./settings.json");
-client.login(settings.token);
+client.login(process.env.TOKEN);
 
 var connections = { }
 var _she5 = {
